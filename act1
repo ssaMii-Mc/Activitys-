@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> THE ROOKIE </h1>
+    </head>
+    <body>
+     <P>
+ The Rookie sigue a John Nolan.un hombre de 45 años que,
+ tras un incidente que cambia su vida,
+ <Strong>
+este decide unirse al departamento de policia de los Angeles;
+ convirtiéndose en el novato más veterano y enfrentando el escepticismo de sus compañeros.
+ La serie destaca por la actuación carismática de Nathan Fillion,
+ </Strong>
+  su mezcla equilibrada de drama, acción y toques de humor,
+   y por estar inspirada en hechos reales.
+   <em>
+    Ha recibido buenas críticas y múltiples nominaciones a premios,
+     lo que la convierte en una opción atractiva para los fans del género policial.
+   </em>
+    </P>
+
+
+ <h2>
+    Tareas pendientes
+    <Ul>
+        <li>
+            Hacer aseo 
+        </li>
+        <li>
+            Ir al gym
+        </li>
+        <li>
+            Ir a la u
+        </li>
+    </Ul>
+ </h2>
+ <h3>
+    <p>
+        Esta pagina hace referencia <a href="https://es.wikipedia.org/wiki/The_Rookie_(serie_de_televisi%C3%B3n)"> Wikipedia </a>
+    </p>
+ </h3>
+    </body>
+</html>
