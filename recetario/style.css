@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: #fdf1e0;        /* color de fondo de toda la página */
+  font-family: "Poppins", sans-serif;
+  color: #3a2f28;
+  text-align: center;               /* centra todo el texto */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  color: #c0562f;                   /* color del título */
+}
+
+p.subtitulo {
+  margin-top: 0;
+  color: #7a6a5c;
+  font-style: italic;
+}
+
+nav {
+  margin: 1.5rem 0 2.5rem;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 0.4rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #c0562f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #a8451f;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 0 auto 1.5rem auto;
+  max-width: 400px;
+  text-decoration: none;
+  color: #3a2f28;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h2 {
+  margin: 0.3rem 0;
+  color: #c0562f;
+}
+
+.tarjeta .tiempo {
+  display: inline-block;
+  background-color: #fbdcc4;
+  color: #a8451f;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 2rem;
+  color: #7a6a5c;
+  font-size: 0.85rem;
+}

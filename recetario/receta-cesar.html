@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ensalada César - Recetario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #eef3e2;
+      text-align: center;
+      margin: 0;
+      padding: 30px 10px;
+    }
+
+    h1 {
+      color: #c0562f;
+    }
+
+    nav a {
+      margin: 5px;
+      padding: 8px 15px;
+      background-color: #c0562f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .contenido {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px auto;
+      width: 320px;
+    }
+
+    .contenido img {
+      width: 100%;
+    }
+
+    .contenido h2 {
+      color: #5c8a3a;
+    }
+
+    table {
+      margin: 15px auto;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: center;
+    }
+
+    button {
+      padding: 6px 12px;
+      margin: 3px;
+      cursor: pointer;
+    }
+
+    a.volver {
+      color: #5c8a3a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi Recetario</h1>
+  <p>Tres recetas fáciles de preparar en casa</p>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="receta-cesar.html">Ensalada César</a>
+    <a href="receta-bolonesa.html">Spaghetti Boloñesa</a>
+    <a href="receta-tacos.html">Tacos al Pastor</a>
+  </nav>
+
+  <div class="contenido">
+    <h2>Ensalada César</h2>
+
+    <img src="img/cesar.jpg" alt="Ensalada César" />
+
+    <p>Tiempo de cocción: 15 minutos</p>
+
+    <p>
+      Porciones:
+      <button onclick="cambiarPorciones(1)">x1</button>
+      <button onclick="cambiarPorciones(2)">x2</button>
+      <button onclick="cambiarPorciones(3)">x3</button>
+    </p>
+
+    <table>
+      <tr>
+        <th>Ingrediente</th>
+        <th>Cantidad</th>
+        <th>Unidad</th>
+      </tr>
+      <tr>
+        <td>Lechuga romana</td>
+        <td class="cantidad" data-base="1">1</td>
+        <td>unidad</td>
+      </tr>
+      <tr>
+        <td>Pechuga de pollo</td>
+        <td class="cantidad" data-base="300">300</td>
+        <td>g</td>
+      </tr>
+      <tr>
+        <td>Pan para crutones</td>
+        <td class="cantidad" data-base="100">100</td>
+        <td>g</td>
+      </tr>
+      <tr>
+        <td>Queso parmesano</td>
+        <td class="cantidad" data-base="50">50</td>
+        <td>g</td>
+      </tr>
+      <tr>
+        <td>Aderezo césar</td>
+        <td class="cantidad" data-base="4">4</td>
+        <td>cucharadas</td>
+      </tr>
+      <tr>
+        <td>Limón</td>
+        <td class="cantidad" data-base="1">1</td>
+        <td>unidad</td>
+      </tr>
+    </table>
+
+    <a class="volver" href="index.html">Volver al recetario</a>
+  </div>
+
+  <script>
+    function cambiarPorciones(factor) {
+      var celdas = document.getElementsByClassName("cantidad");
+      for (var i = 0; i < celdas.length; i++) {
+        var base = Number(celdas[i].getAttribute("data-base"));
+        celdas[i].innerHTML = base * factor;
+      }
+    }
+  </script>
+
+</body>
+</html>
